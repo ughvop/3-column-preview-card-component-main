@@ -1,0 +1,132 @@
+:root {
+  --Bright_orange: hsl(31, 77%, 52%);
+  --Dark_cyan: hsl(184, 100%, 22%);
+  --Very_dark_cyan: hsl(179, 100%, 13%);
+  /*paragraphs*/
+  --Transparent_white: hsla(0, 0%, 100%, 0.75);
+  /*background, headings, buttons*/
+  --Very_light_gray: hsl(0, 0%, 95%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-color: var(--Very_light_gray);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+#container {
+  max-width: 550px;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section {
+  margin-inline: 1.5rem;
+  padding: 2rem 3rem 2rem;
+}
+
+section > p {
+  color: var(--Transparent_white);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  padding-top: 1.5rem;
+}
+
+section > h1 {
+  color: var(--Very_light_gray);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 40px;
+  padding-top: 1.5rem;
+}
+
+.sedans {
+  background-color: var(--Bright_orange);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.suvs {
+  background-color: var(--Dark_cyan);
+}
+
+.luxury {
+  background-color: var(--Very_dark_cyan);
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+button {
+  all: unset;
+  background-color: var(--Very_light_gray);
+  color: inherit;
+  font-family: "Lexend Deca", sans-serif;
+  border-radius: 50px;
+  padding-top: 1em;
+  padding-bottom: 1rem;
+  padding-inline: 2em;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+.sedans > button {
+  color: var(--Bright_orange);
+}
+
+.suvs > button {
+  color: var(--Dark_cyan);
+}
+
+.luxury > button {
+  color: var(--Very_dark_cyan);
+}
+
+button:hover {
+  cursor: pointer;
+  border: 2px solid var(--Very_light_gray);
+  background-color: transparent;
+  color: var(--Very_light_gray);
+}
+
+.attribution {
+  font-size: 11px;
+  font-family: "Lexend Deca", sans-serif;
+  text-align: center;
+}
+
+.attribution a {
+  color: var(--Dark_cyan);
+}
+
+@media screen and (min-width: 950px) {
+  #container {
+    min-width: 950px;
+    display: flex;
+  }
+
+  section {
+    margin: 0;
+  }
+
+  .sedans {
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 5px;
+  }
+
+  .luxury {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+  }
+
+  button {
+    margin-top: 5rem;
+  }
+}
