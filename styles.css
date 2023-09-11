@@ -31,7 +31,7 @@ html {
 
 section {
   margin-inline: 1.5rem;
-  padding: 2rem 3rem 2rem;
+  padding: 3rem 3rem 2rem;
 }
 
 section > p {
@@ -39,6 +39,7 @@ section > p {
   font-family: "Lexend Deca", sans-serif;
   font-size: 15px;
   padding-top: 1.5rem;
+  line-height: 1.6;
 }
 
 section > h1 {
@@ -70,9 +71,7 @@ button {
   color: inherit;
   font-family: "Lexend Deca", sans-serif;
   border-radius: 50px;
-  padding-top: 1em;
-  padding-bottom: 1rem;
-  padding-inline: 2em;
+  padding: 0.8rem 2rem 0.8rem;
   margin-top: 2rem;
   margin-bottom: 1rem;
 }
@@ -91,7 +90,7 @@ button {
 
 button:hover {
   cursor: pointer;
-  border: 2px solid var(--Very_light_gray);
+  outline: 2px solid var(--Very_light_gray);
   background-color: transparent;
   color: var(--Very_light_gray);
 }
